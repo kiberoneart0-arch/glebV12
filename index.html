@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 марта, мамочка! от Глеба</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="spring-bg">
+        <!-- Летающие цветы (будут созданы в CSS) -->
+        <div class="flower flower1">🌸</div>
+        <div class="flower flower2">🌼</div>
+        <div class="flower flower3">🌷</div>
+        <div class="flower flower4">🌺</div>
+        <div class="flower flower5">🌻</div>
+    </div>
+
+    <div class="container">
+        <h1 class="glitch" data-text="Мамочка, с 8 марта!">Мамочка, с 8 марта!</h1>
+        <p class="subtitle">Этот сайт для тебя от <span class="highlight">Глеба</span></p>
+
+        <div class="gif-container">
+            <!-- Убедитесь, что файл 2.gif лежит рядом с index.html -->
+            <img src="2.gif" alt="Весенняя гифка" class="gif-image" id="mainGif">
+        </div>
+
+        <div class="content-block">
+            <button class="surprise-btn" id="surpriseBtn">Нажми для сюрприза 💐</button>
+            <div class="message-box" id="messageBox">
+                Ты самая лучшая мама на свете! Счастья, здоровья и весеннего настроения!
+            </div>
+        </div>
+
+        <!-- Интерактивная игра: Собери букет для мамы -->
+        <div class="game-section">
+            <h2>Игра: Собери букет для мамы 🌷</h2>
+            <p class="game-description">Кликай на цветы, чтобы добавить их в букет. Собери 7 цветов!</p>
+            
+            <div class="game-area">
+                <div class="flower-garden" id="flowerGarden">
+                    <!-- Цветы будут созданы через JS -->
+                </div>
+                
+                <div class="bouquet-area" id="bouquetArea">
+                    <div class="bouquet-placeholder" id="bouquetPlaceholder">
+                        <span class="bouquet-icon">🧺</span>
+                        <span class="bouquet-count" id="bouquetCount">0/7</span>
+                    </div>
+                    <div class="bouquet-flowers" id="bouquetFlowers"></div>
+                </div>
+            </div>
+            
+            <button class="reset-game" id="resetGame">Собрать заново</button>
+            <div class="game-win-message" id="gameWinMessage">🎉 Ура! Букет для мамы готов! 🎉</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
