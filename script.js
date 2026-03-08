@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     // --- Элементы страницы ---
     const surpriseBtn = document.getElementById('surpriseBtn');
     const messageBox = document.getElementById('messageBox');
